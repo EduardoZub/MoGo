@@ -1,0 +1,24 @@
+@media (max-width: 1440px) {
+    .section-head {
+        .head-text__text {
+            font-size: 45px;
+        }
+        .head-text {
+            .head-text-title__text {
+                font-size: 90px;
+                line-height: 91px;
+            }
+        }
+        .head-text .head-text-title {
+            margin-top: 10px
+        }
+        .head-text__delimiter {
+            margin: 37px 0;
+        }
+        .head-text__more {
+            padding: 13px 40px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {}
