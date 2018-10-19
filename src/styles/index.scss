@@ -773,6 +773,72 @@ body.show-search-field {
 .section-our-work {
     width: 100%;
     padding: 80px 0;
+    .images-block {
+        .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: $gradient;
+            transition: all .4s;
+            opacity: 0;
+            z-index: 1;
+            &__title {
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffff;
+                text-transform: uppercase;
+                padding: 20px 0 10px 0;
+            }
+            &__text {
+                font-family: "Roboto-LightItalic";
+                font-size: 15px;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 24px;
+            }
+            .fa-image {
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+        &__img {
+            position: relative;
+            z-index: 0;
+            &:hover {
+                .mask {
+                    opacity: 1;
+                    transition: all .4s;
+                }
+            }
+        }
+        .images-box1 {
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            &__item {
+                width: 50%;
+                height: 390px;
+            }
+        }
+        margin-top: 100px;
+        .images-box2 {
+            width: 100%;
+            .images-box-wrap {
+                width: 100%;
+                .images-box2-img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .images-box2-img2 {
+                    width: 100%;
+                    height: 50%;
+                }
+            }
+        }
+    }
 }
 
 // section our work END
