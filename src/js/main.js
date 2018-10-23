@@ -42,16 +42,42 @@ $(document).ready(function() {
         }
     });
 
+    // script for map START
+    $(".mask-title, .close-map").click(function() {
+        $("body").toggleClass("show-map");
+    });
+    // script for map END
+
 });
 // script for map START
-var map;
+var MyMap;
 
 function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: {
-            lat: -34.397,
-            lng: 150.644
-        },
-        zoom: 8
+    MyMap = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 56.005476, lng: -4.358288 },
+        zoom: 13,
+        // mapTypeId: google.maps.MapTypeId.SATELLITE,
+        mapTypeId: 'satellite',
+        heading: 90,
+        tilt: 45
+
     });
+
+
+
+    var marker = new google.maps.Marker({
+        position: { lat: 56.008476, lng: -4.358299 },
+        map: MyMap,
+        icon: "img/PIN_2.png"
+    })
+
+    var InfoWindow = new google.maps.InfoWindow({
+        content: "<span>MoGo</span>"
+    })
+
+    InfoWindow.open(MyMap, marker)
+
+    marker.addListener("click", function() {
+        InfoWindow.open(MyMap, marker);
+    })
 }
