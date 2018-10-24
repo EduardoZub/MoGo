@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>index</title>
-    <!-- <link type="image/png" rel="shortcut icon" href="img/" /> -->
+    <title>MoGo</title>
+    <link type="image/png" rel="shortcut icon" href="img/OK.png" />
     <link rel="stylesheet" type="text/css" href="lib/slick/slick.css" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -38,6 +38,66 @@
         </div>
     </header>
     <!-- header END -->
+    <!-- section modal window START -->
+    <section class="section-modal-window flex-row flex-row_horizontal-center flex-row_vertical-center">
+        <div class="modal-window-wrap">
+            <div class="modal-window flex-row">
+                <div class="content-block">
+                    <div class="tabs flex-row  flex-row_vertical-center">
+                        <span class="tab">Sign in</span>
+                        <span class="tab">Sign up</span>
+                    </div>
+                    <div class="tab_content">
+                        <div class="tab_item">
+                            <form action="#" class="form form-sign-in flex-column flex-column_horizontal-center flex-column_vertical-center">
+                                <label for="email-sign-in" class="form-sign-in__labe form__labe">Email</label>
+                                <input type="email" class="form-sign-in__input form__input" name="" id="email-sign-in">
+
+                                <label for="password-sign-in" class="form-sign-in__labe form__labe">Password</label>
+                                <input type="password" class="form-sign-in__input form__input" name="" id="password-sign-in">
+
+                                <div class="checkbox-wrap flex-row flex-row_vertical-center">
+                                    <input class="checkbox-input" type="checkbox" name="" id="checkbox-remember-sign-in">
+                                    <label class="checkbox-labe" for="checkbox-remember-sign-in">Remember me</label>
+                                </div>
+
+                                <input class="form_btn btn" type="button" id="form-sign-in_btn" value="Sign in">
+                            </form>
+                            <div class="help-links ">
+                                <a href="#" class="help-links__link">Forgot your <span class="help-links__link_color-black">password?</span></a>
+                                <a href="#" class="help-links__link">Not a remember yet? <span class="help-links__link_color-black">Greate account</span> </a>
+                            </div>
+                        </div>
+                        <div class="tab_item">
+                            <form action="#" class="form form-sign-up flex-column flex-column_horizontal-center flex-column_vertical-center">
+                                <label for="email-sign-up" class="form-sign-up__labe form__labe">Email</label>
+                                <input type="email" class="form-sign-ip__input form__input" name="" id="email-sign-ip">
+
+                                <label for="password-sign-up" class="form-sign-up__labe form__labe">Password</label>
+                                <input type="password" class="form-sign-up__input form__input" name="" id="password-sign-up">
+
+                                <label for="confirm-password-sign-up " class="form-sign-up__labe form__labe">Confirm password</label>
+                                <input type="password" class="form-sign-up__input form__input" name="" id="confirm-password-sign-up">
+
+                                <input class="form_btn btn" type="button" id="form-sign-up__btn" value="Sign up">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-block img">
+                    <div class="close-modal">
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                    <div class="img-block-title flex-column flex-column_horizontal-center flex-column_vertical-center">
+                        <div class="img-block-title__text">Welcome</div>
+                        <div class="img-block-title__text">to</div>
+                        <div class="img-block-title__text">MoGo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section modal window END -->
     <!-- section head START -->
     <section class="section-head">
         <div class="section-head__mask"></div>

@@ -5,6 +5,18 @@ $(document).ready(function() {
         $("body").toggleClass("show-search-field");
     });
 
+    // script for modal window tabs START
+    $(".tab_item").not(":first").hide();
+    $(".content-block .tab").click(function() {
+        $(".content-block .tab").removeClass("active").eq($(this).index()).addClass("active");
+        $(".tab_item").hide().eq($(this).index()).fadeIn()
+    }).eq(0).addClass("active");
+
+    //script for modal show START
+    $(".icon-header__account, .close-modal").click(function() {
+        $("body").toggleClass("show-modal-window");
+    });
+
     // script for section-what-we-do slider START
     $(".slider").slick({
         infinite: true,

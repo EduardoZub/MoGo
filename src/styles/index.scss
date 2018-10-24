@@ -79,7 +79,7 @@ a {
     }
 }
 
-// section name START
+// styles for section name START
 .section-name-subgolem {
     font-family: "KaushanScript";
     font-size: 24px;
@@ -114,7 +114,7 @@ a {
     text-align: center;
 }
 
-// section name END
+// styles for section name END
 //variables START
 $gradient: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 // MAIN START
@@ -204,6 +204,157 @@ body.show-search-field {
 }
 
 //  header END
+// section modal window START
+.section-modal-window {
+    position: fixed;
+    top: 0;
+    left: -10000px;
+    width: 100%;
+    height: 100%;
+    z-index: 50000;
+    transition: all .4s;
+    .modal-window-wrap {
+        width: 100%;
+    }
+    .modal-window {
+        width: 60%;
+        margin: 0 auto;
+        box-shadow: 0px 0px 70px -12px #95e1d3;
+        .content-block {
+            min-width: 350px;
+            // min-height: 500px;
+            .tab {
+                width: 100%;
+                font-family: Montserrat-Bold;
+                font-size: 20px;
+                font-weight: 400;
+                background-color: #f38181;
+                color: #fff;
+                padding: 20px 30px;
+                text-transform: uppercase;
+                cursor: pointer;
+                &_item {
+                    .form-sign-in {
+                        .checkbox-wrap {
+                            width: 100%;
+                            .checkbox-input {
+                                outline: none;
+                            }
+                            .checkbox-labe {
+                                font-family: Montserrat;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .form {
+                        &_btn {
+                            width: 100%;
+                            // background-image: $gradient;
+                            background-color: #c19d9d;
+                            padding: 15px 0;
+                            margin: 20px 0;
+                            transition: all .4s;
+                            border: 2px solid transparent;
+                            &:hover {
+                                background-image: none;
+                                background-color: #f38181;
+                                transition: all .4s;
+                                border: 2px solid;
+                            }
+                        }
+                        &__labe {
+                            font-family: Montserrat;
+                            font-size: 20px;
+                            font-weight: 800;
+                            padding-bottom: 10px;
+                        }
+                        &__input {
+                            width: 100%;
+                            font-family: Roboto-Regular;
+                            font-size: 15px;
+                            margin-bottom: 10px;
+                            padding: 5px 10px;
+                            outline: none;
+                        }
+                        .form-sign-up__input:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .tab_content {
+                min-height: 300px;
+                background-color: #fff;
+                padding: 50px;
+            }
+            .help-links {
+                &__link {
+                    display: block;
+                    font-family: Roboto-Regular;
+                    font-size: 15px;
+                    color: #999999;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin: 0;
+                    }
+                    &_color-black {
+                        color: #222;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .content-block .active {
+            color: red;
+            background-color: #fff;
+            margin: 0;
+        }
+        .img-block {
+            position: relative;
+            width: 100%;
+            background-image: url(../img/summerfield-336672_1280.jpg);
+            .img-block-title {
+                width: 100%;
+                height: 100%;
+                &__text {
+                    font-family: Montserrat-Bold;
+                    font-size: 70px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    text-align: center;
+                    text-shadow: 0px 7px 27px black;
+                }
+            }
+            .close-modal {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                .fa-times-circle {
+                    font-size: 25px;
+                    cursor: pointer;
+                    color: #95e1d3;
+                    &:hover {
+                        color: #f38181;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.show-modal-window {
+    .section-modal-window {
+        // top: 0;
+        left: 0;
+        transition: all .4s;
+    }
+}
+
+// section modal window END
 // section head START
 .section-head {
     position: relative;
