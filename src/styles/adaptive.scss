@@ -21,4 +21,48 @@
     }
 }
 
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .section-modal-window {
+        .modal-window {
+            .img-block {
+                .img-block-title {
+                    padding: 50px;
+                    &__text {
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .section-coments {
+        .section-coments-slider {
+            .slick-prev {
+                left: -22px;
+                transform: rotate(90deg);
+            }
+            .slick-next {
+                right: -22px;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+    .footer {
+        .subscribe-form__btn {
+            width: 115px;
+        }
+        .block-info {
+            margin-right: 23px;
+        }
+    }
+}
+
+@media (max-width: 965px) {
+    .footer {
+        .footer-content-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -13,8 +13,16 @@ $(document).ready(function() {
     }).eq(0).addClass("active");
 
     //script for modal show START
-    $(".icon-header__account, .close-modal").click(function() {
+    $(".icon-header__account, .close-modal, .mask-block").click(function() {
         $("body").toggleClass("show-modal-window");
+    });
+    // script for tab modal img START
+    $(".tab_img-two").click(function() {
+        $("body").addClass("tab-img-change");
+    });
+
+    $(".tab_img-one").click(function() {
+        $("body").removeClass("tab-img-change");
     });
 
     // script for section-what-we-do slider START

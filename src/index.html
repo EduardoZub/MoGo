@@ -14,558 +14,551 @@
 
 <body>
     <!-- MAIN START -->
-    <!-- header START -->
-    <header class="header">
-        <div class="wrapper flex-row flex-row_vertical-center flex-row_betwen">
-            <div class="header-logo">
-                <a href="#" class="header-logo__text">MoGo</a>
+    <div class="MAIN">
+
+        <!-- header START -->
+        <header class="header">
+            <div class="wrapper flex-row flex-row_vertical-center flex-row_betwen">
+                <div class="header-logo">
+                    <a href="#" class="header-logo__text">MoGo</a>
+                </div>
+                <div class="header-item-wrap flex-row flex-row_vertical-center">
+                    <nav class="header-nav">
+                        <a href="#" class="header-nav__item">About</a>
+                        <a href="#" class="header-nav__item">service</a>
+                        <a href="#" class="header-nav__item">work</a>
+                        <a href="#" class="header-nav__item">blog</a>
+                        <a href="#" class="header-nav__item">contact</a>
+
+                        <form class="header-form-search" action="#">
+                            <input class="header-form-search__input" type="text">
+                        </form>
+                    </nav>
+                    <i class="icon-header icon-header__account  far fa-user-circle"></i>
+                    <i class="icon-header icon-header__search fas fa-search"></i>
+                </div>
             </div>
-            <div class="header-item-wrap flex-row flex-row_vertical-center">
-                <nav class="header-nav">
-                    <a href="#" class="header-nav__item">About</a>
-                    <a href="#" class="header-nav__item">service</a>
-                    <a href="#" class="header-nav__item">work</a>
-                    <a href="#" class="header-nav__item">blog</a>
-                    <a href="#" class="header-nav__item">contact</a>
+        </header>
+        <!-- header END -->
+        <!-- section modal window START -->
+        <section class="section-modal-window flex-row flex-row_horizontal-center flex-row_vertical-center">
+            <div class="mask-block"></div>
+            <div class="modal-window-wrap">
+                <div class="modal-window flex-row">
+                    <div class="content-block">
+                        <div class="tabs flex-row  flex-row_vertical-center">
+                            <span class="tab tab_img-one">Sign in</span>
+                            <span class="tab tab_img-two ">Sign up</span>
+                        </div>
+                        <div class="tab_content">
+                            <div class="tab_item">
+                                <form action="#" class="form form-sign-in flex-column flex-column_horizontal-center flex-column_vertical-center">
+                                    <label for="email-sign-in" class="form-sign-in__labe form__labe">Email</label>
+                                    <input type="email" class="form-sign-in__input form__input" name="" id="email-sign-in">
 
-                    <form class="header-form-search" action="#">
-                        <input class="header-form-search__input" type="text">
-                    </form>
-                </nav>
-                <i class="icon-header icon-header__account  far fa-user-circle"></i>
-                <i class="icon-header icon-header__search fas fa-search"></i>
-            </div>
-        </div>
-    </header>
-    <!-- header END -->
-    <!-- section modal window START -->
-    <section class="section-modal-window flex-row flex-row_horizontal-center flex-row_vertical-center">
-        <div class="modal-window-wrap">
-            <div class="modal-window flex-row">
-                <div class="content-block">
-                    <div class="tabs flex-row  flex-row_vertical-center">
-                        <span class="tab">Sign in</span>
-                        <span class="tab">Sign up</span>
-                    </div>
-                    <div class="tab_content">
-                        <div class="tab_item">
-                            <form action="#" class="form form-sign-in flex-column flex-column_horizontal-center flex-column_vertical-center">
-                                <label for="email-sign-in" class="form-sign-in__labe form__labe">Email</label>
-                                <input type="email" class="form-sign-in__input form__input" name="" id="email-sign-in">
+                                    <label for="password-sign-in" class="form-sign-in__labe form__labe">Password</label>
+                                    <input type="password" class="form-sign-in__input form__input" name="" id="password-sign-in">
 
-                                <label for="password-sign-in" class="form-sign-in__labe form__labe">Password</label>
-                                <input type="password" class="form-sign-in__input form__input" name="" id="password-sign-in">
+                                    <div class="checkbox-wrap flex-row flex-row_vertical-center">
+                                        <input class="checkbox-input" type="checkbox" name="" id="checkbox-remember-sign-in">
+                                        <label class="checkbox-labe" for="checkbox-remember-sign-in">Remember me</label>
+                                    </div>
 
-                                <div class="checkbox-wrap flex-row flex-row_vertical-center">
-                                    <input class="checkbox-input" type="checkbox" name="" id="checkbox-remember-sign-in">
-                                    <label class="checkbox-labe" for="checkbox-remember-sign-in">Remember me</label>
+                                    <input class="form_btn btn" type="button" id="form-sign-in_btn" value="Sign in">
+                                </form>
+                                <div class="help-links ">
+                                    <a href="#" class="help-links__link">Forgot your <span class="help-links__link_color-black">password?</span></a>
+                                    <a href="#" class="help-links__link">Not a remember yet? <span class="help-links__link_color-black">Greate account</span> </a>
                                 </div>
+                            </div>
+                            <div class="tab_item">
+                                <form action="#" class="form form-sign-up flex-column flex-column_horizontal-center flex-column_vertical-center">
+                                    <label for="email-sign-up" class="form-sign-up__labe form__labe">Email</label>
+                                    <input type="email" class="form-sign-ip__input form__input" name="" id="email-sign-ip">
 
-                                <input class="form_btn btn" type="button" id="form-sign-in_btn" value="Sign in">
-                            </form>
-                            <div class="help-links ">
-                                <a href="#" class="help-links__link">Forgot your <span class="help-links__link_color-black">password?</span></a>
-                                <a href="#" class="help-links__link">Not a remember yet? <span class="help-links__link_color-black">Greate account</span> </a>
+                                    <label for="password-sign-up" class="form-sign-up__labe form__labe">Password</label>
+                                    <input type="password" class="form-sign-up__input form__input" name="" id="password-sign-up">
+
+                                    <label for="confirm-password-sign-up " class="form-sign-up__labe form__labe">Confirm password</label>
+                                    <input type="password" class="form-sign-up__input form__input" name="" id="confirm-password-sign-up">
+
+                                    <input class="form_btn btn" type="button" id="form-sign-up__btn" value="Sign up">
+                                </form>
                             </div>
                         </div>
-                        <div class="tab_item">
-                            <form action="#" class="form form-sign-up flex-column flex-column_horizontal-center flex-column_vertical-center">
-                                <label for="email-sign-up" class="form-sign-up__labe form__labe">Email</label>
-                                <input type="email" class="form-sign-ip__input form__input" name="" id="email-sign-ip">
-
-                                <label for="password-sign-up" class="form-sign-up__labe form__labe">Password</label>
-                                <input type="password" class="form-sign-up__input form__input" name="" id="password-sign-up">
-
-                                <label for="confirm-password-sign-up " class="form-sign-up__labe form__labe">Confirm password</label>
-                                <input type="password" class="form-sign-up__input form__input" name="" id="confirm-password-sign-up">
-
-                                <input class="form_btn btn" type="button" id="form-sign-up__btn" value="Sign up">
-                            </form>
+                    </div>
+                    <div class="img-block img">
+                        <div class="close-modal">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                        <div class="img-block-title flex-column flex-column_horizontal-center flex-column_vertical-center">
+                            <div class="img-block-title__text">Welcome</div>
+                            <div class="img-block-title__text">to</div>
+                            <div class="img-block-title__text">MoGo</div>
                         </div>
                     </div>
                 </div>
-                <div class="img-block img">
-                    <div class="close-modal">
-                        <i class="far fa-times-circle"></i>
-                    </div>
-                    <div class="img-block-title flex-column flex-column_horizontal-center flex-column_vertical-center">
-                        <div class="img-block-title__text">Welcome</div>
-                        <div class="img-block-title__text">to</div>
-                        <div class="img-block-title__text">MoGo</div>
-                    </div>
+            </div>
+        </section>
+        <!-- section modal window END -->
+        <!-- section head START -->
+        <section class="section-head">
+            <div class="section-head__mask"></div>
+            <div class="head-text flex-column flex-column_horizontal-center flex-column_vertical-center">
+                <div class="head-text__text">Creative Template</div>
+                <div class="head-text-title flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <span class="head-text-title__text ">Welcome</span>
+                    <span class="head-text-title__text">to MoGo</span>
                 </div>
+                <div class="head-text__delimiter"></div>
+                <a class="head-text__more btn" href="#">Learn more</a>
             </div>
-        </div>
-    </section>
-    <!-- section modal window END -->
-    <!-- section head START -->
-    <section class="section-head">
-        <div class="section-head__mask"></div>
-        <div class="head-text flex-column flex-column_horizontal-center flex-column_vertical-center">
-            <div class="head-text__text">Creative Template</div>
-            <div class="head-text-title flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <span class="head-text-title__text ">Welcome</span>
-                <span class="head-text-title__text">to MoGo</span>
-            </div>
-            <div class="head-text__delimiter"></div>
-            <a class="head-text__more btn" href="#">Learn more</a>
-        </div>
 
-        <video class="section-head__video-bgr" autoplay="" loop="" muted="" width="100%">
+            <video class="section-head__video-bgr" autoplay="" loop="" muted="" width="100%">
             <source autoplay loop src="img/Jellyfish - 10480.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             <!-- <source src="img/Jellyfish - 10480.webm" type='video/webm; codecs="vp8, vorbis"'> -->
         </video>
 
 
-        <div class="links-block">
-            <div class="wrapper flex-row flex-row_vertical-center flex-row_betwen">
-                <a href="#" class="link-box">
-                    <div class="delimiter-block">
-                        <div class="delimiter-value"></div>
-                    </div>
-                    <div class="links-block-text">
-                        <span class="links-block-text__numb">01</span>
-                        <span>Intro</span>
-                    </div>
-                </a>
-                <a href="#" class="link-box">
-                    <div class="delimiter-block">
-                        <div class="delimiter-value"></div>
-                    </div>
-                    <div class="links-block-text">
-                        <span class="links-block-text__numb">02</span>
-                        <span>work</span>
-                    </div>
-                </a>
-                <a href="#" class="link-box">
-                    <div class="delimiter-block">
-                        <div class="delimiter-value"></div>
-                    </div>
-                    <div class="links-block-text">
-                        <span class="links-block-text__numb">03</span>
-                        <span>about</span>
-                    </div>
-                </a>
-                <a href="#" class="link-box">
-                    <div class="delimiter-block">
-                        <div class="delimiter-value"></div>
-                    </div>
-                    <div class="links-block-text">
-                        <span class="links-block-text__numb">04</span>
-                        <span>contacts</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- section head END -->
-    <!-- section about START -->
-    <section class="section-about">
-        <div class="wrapper flex-column flex-column_horizontal-center flex-column_vertical-center">
-            <div class="section-about__subgolem section-name-subgolem">What we do</div>
-            <div class="section-about__title section-name-title">Story about us</div>
-            <div class="section-about__delimiter section-name-delimiter"></div>
-            <div class="section-about__text section-name-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-
-            <div class="content-block flex-row flex-row_vertical-center flex-row_betwen">
-                <a href="#" class="img-box">
-                    <div class="img-box__img-mask flex-column flex-column_horizontal-center flex-column_vertical-center">
-                        <i class="fas fa-users"></i>
-                        <div class="mask-text">super team</div>
-                    </div>
-                    <div class="img-box__img-1"></div>
-                </a>
-                <a href="#" class="img-box">
-                    <div class="img-box__img-mask flex-column flex-column_horizontal-center flex-column_vertical-center">
-                        <i class="fas fa-users"></i>
-                        <div class="mask-text">super team</div>
-                    </div>
-                    <div class="img-box__img-2"></div>
-                </a>
-                <a href="#" class="img-box">
-                    <div class="img-box__img-mask flex-column flex-column_horizontal-center flex-column_vertical-center">
-                        <i class="fas fa-users"></i>
-                        <div class="mask-text">super team</div>
-                    </div>
-                    <div class="img-box__img-3"></div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- section about END -->
-    <!-- section status START -->
-    <section class="section-status">
-        <div class="wrapper flex-row flex-row_vertical-center flex-row_horizontal-center">
-            <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <div class="status-block__numb">42</div>
-                <div class="status-block__title">Web Design Projects</div>
-            </div>
-            <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <div class="status-block__numb">123</div>
-                <div class="status-block__title">happy client</div>
-            </div>
-            <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <div class="status-block__numb">15</div>
-                <div class="status-block__title">award winner</div>
-            </div>
-            <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <div class="status-block__numb">99</div>
-                <div class="status-block__title">cup of coffee</div>
-            </div>
-            <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <div class="status-block__numb">24</div>
-                <div class="status-block__title">members</div>
-            </div>
-        </div>
-    </section>
-    <!-- section status END -->
-    <!-- section services START-->
-    <section class="section-services">
-        <div class="wrapper flex-column flex-column_horizontal-center flex-column_vertical-center ">
-            <div class="section-services__subgolem section-name-subgolem">We work with</div>
-            <div class="section-services__title section-name-title">Amazing Services</div>
-            <div class="section-services__delimiter section-name-delimiter"></div>
-
-            <div class="services-blocks flex-row flex-row_horizontal-center flex-row_vertical-center">
-                <div class="services-block flex-row ">
-                    <div class="icon services-block__icon-alarm"></div>
-                    <div class="services-block-text-wrap">
-                        <div class="services-block__title">Photography</div>
-                        <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-                    </div>
-                </div>
-                <div class="services-block flex-row ">
-                    <div class="icon services-block__icon-line-graph"></div>
-                    <div class="services-block-text-wrap">
-                        <div class="services-block__title">Web Design</div>
-                        <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-                    </div>
-                </div>
-                <div class="services-block flex-row ">
-                    <div class="icon services-block__icon-computer"></div>
-                    <div class="services-block-text-wrap">
-                        <div class="services-block__title">Creativity</div>
-                        <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="services-blocks flex-row flex-row_horizontal-center flex-row_vertical-center">
-                <div class="services-block flex-row ">
-                    <div class="icon services-block__icon-book"></div>
-                    <div class="services-block-text-wrap">
-                        <div class="services-block__title">Photography</div>
-                        <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-                    </div>
-                </div>
-                <div class="services-block flex-row ">
-                    <div class="icon services-block__icon-home"></div>
-                    <div class="services-block-text-wrap">
-                        <div class="services-block__title">Web Design</div>
-                        <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-                    </div>
-                </div>
-                <div class="services-block flex-row ">
-                    <div class="icon services-block__icon-image"></div>
-                    <div class="services-block-text-wrap">
-                        <div class="services-block__title">Creativity</div>
-                        <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section services END-->
-    <!-- section designe START -->
-    <section class="section-designe">
-        <div class="wrapper flex-column flex-column_horizontal-center flex-column_vertical-center">
-
-            <div class="section-designe__subgolem section-name-subgolem">We work with</div>
-            <div class="section-designe__title section-name-title">Amazing Services</div>
-            <div class="section-designe__delimiter section-name-delimiter"></div>
-
-            <div class="img-box">
-                <div class="img-box__img"></div>
-            </div>
-        </div>
-    </section>
-    <!-- section designe END -->
-    <!-- section what we do START -->
-    <section class="section-what-we-do">
-        <div class="wrapper">
-            <div class="section-what-we-do__title-text flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <div class="section-what-we-do__subgolem section-name-subgolem">Service</div>
-                <div class="section-what-we-do__title section-name-title">what we do</div>
-                <div class="section-what-we-do__delimiter section-name-delimiter"></div>
-                <div class="section-what-we-do__text section-name-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            </div>
-
-            <div class="content-box flex-row">
-                <div class="content-box-slider-block">
-                    <div class="slider">
-                        <div class="slider-content">
-                            <div style="background-image: url(img/img-we-do1.jpg);" class="slider-img"></div>
+            <div class="links-block">
+                <div class="wrapper flex-row flex-row_vertical-center flex-row_betwen">
+                    <a href="#" class="link-box">
+                        <div class="delimiter-block">
+                            <div class="delimiter-value"></div>
                         </div>
-                        <div class="slider-content">
-                            <div style="background-image: url(img/startup-593296_640.jpg);" class="slider-img"></div>
+                        <div class="links-block-text">
+                            <span class="links-block-text__numb">01</span>
+                            <span>Intro</span>
                         </div>
-                        <div class="slider-content">
-                            <div style="background-image: url(img/woman-photographer-1245761_640.jpg);" class="slider-img"></div>
+                    </a>
+                    <a href="#" class="link-box">
+                        <div class="delimiter-block">
+                            <div class="delimiter-value"></div>
                         </div>
-                        <div class="slider-content">
-                            <div style="background-image: url(img/painter-931711_640.jpg);" class="slider-img"></div>
+                        <div class="links-block-text">
+                            <span class="links-block-text__numb">02</span>
+                            <span>work</span>
                         </div>
+                    </a>
+                    <a href="#" class="link-box">
+                        <div class="delimiter-block">
+                            <div class="delimiter-value"></div>
+                        </div>
+                        <div class="links-block-text">
+                            <span class="links-block-text__numb">03</span>
+                            <span>about</span>
+                        </div>
+                    </a>
+                    <a href="#" class="link-box">
+                        <div class="delimiter-block">
+                            <div class="delimiter-value"></div>
+                        </div>
+                        <div class="links-block-text">
+                            <span class="links-block-text__numb">04</span>
+                            <span>contacts</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- section head END -->
+        <!-- section about START -->
+        <section class="section-about">
+            <div class="wrapper flex-column flex-column_horizontal-center flex-column_vertical-center">
+                <div class="section-about__subgolem section-name-subgolem">What we do</div>
+                <div class="section-about__title section-name-title">Story about us</div>
+                <div class="section-about__delimiter section-name-delimiter"></div>
+                <div class="section-about__text section-name-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
 
+                <div class="content-block flex-row flex-row_vertical-center flex-row_betwen">
+                    <a href="#" class="img-box">
+                        <div class="img-box__img-mask flex-column flex-column_horizontal-center flex-column_vertical-center">
+                            <i class="fas fa-users"></i>
+                            <div class="mask-text">super team</div>
+                        </div>
+                        <div class="img-box__img-1 img"></div>
+                    </a>
+                    <a href="#" class="img-box">
+                        <div class="img-box__img-mask flex-column flex-column_horizontal-center flex-column_vertical-center">
+                            <i class="fas fa-users"></i>
+                            <div class="mask-text">super team</div>
+                        </div>
+                        <div class="img-box__img-2 img"></div>
+                    </a>
+                    <a href="#" class="img-box">
+                        <div class="img-box__img-mask flex-column flex-column_horizontal-center flex-column_vertical-center">
+                            <i class="fas fa-users"></i>
+                            <div class="mask-text">super team</div>
+                        </div>
+                        <div class="img-box__img-3 img"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- section about END -->
+        <!-- section status START -->
+        <section class="section-status">
+            <div class="wrapper flex-row flex-row_vertical-center flex-row_horizontal-center">
+                <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <div class="status-block__numb">42</div>
+                    <div class="status-block__title">Web Design Projects</div>
+                </div>
+                <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <div class="status-block__numb">123</div>
+                    <div class="status-block__title">happy client</div>
+                </div>
+                <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <div class="status-block__numb">15</div>
+                    <div class="status-block__title">award winner</div>
+                </div>
+                <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <div class="status-block__numb">99</div>
+                    <div class="status-block__title">cup of coffee</div>
+                </div>
+                <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <div class="status-block__numb">24</div>
+                    <div class="status-block__title">members</div>
+                </div>
+            </div>
+        </section>
+        <!-- section status END -->
+        <!-- section services START-->
+        <section class="section-services">
+            <div class="wrapper flex-column flex-column_horizontal-center flex-column_vertical-center ">
+                <div class="section-services__subgolem section-name-subgolem">We work with</div>
+                <div class="section-services__title section-name-title">Amazing Services</div>
+                <div class="section-services__delimiter section-name-delimiter"></div>
+
+                <div class="services-blocks flex-row flex-row_horizontal-center flex-row_vertical-center">
+                    <div class="services-block flex-row ">
+                        <div class="icon services-block__icon-alarm"></div>
+                        <div class="services-block-text-wrap">
+                            <div class="services-block__title">Photography</div>
+                            <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                    </div>
+                    <div class="services-block flex-row ">
+                        <div class="icon services-block__icon-line-graph"></div>
+                        <div class="services-block-text-wrap">
+                            <div class="services-block__title">Web Design</div>
+                            <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                    </div>
+                    <div class="services-block flex-row ">
+                        <div class="icon services-block__icon-computer"></div>
+                        <div class="services-block-text-wrap">
+                            <div class="services-block__title">Creativity</div>
+                            <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="content-box-accordion-block">
+                <div class="services-blocks flex-row flex-row_horizontal-center flex-row_vertical-center">
+                    <div class="services-block flex-row ">
+                        <div class="icon services-block__icon-book"></div>
+                        <div class="services-block-text-wrap">
+                            <div class="services-block__title">Photography</div>
+                            <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                    </div>
+                    <div class="services-block flex-row ">
+                        <div class="icon services-block__icon-home"></div>
+                        <div class="services-block-text-wrap">
+                            <div class="services-block__title">Web Design</div>
+                            <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                    </div>
+                    <div class="services-block flex-row ">
+                        <div class="icon services-block__icon-image"></div>
+                        <div class="services-block-text-wrap">
+                            <div class="services-block__title">Creativity</div>
+                            <div class="services-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section services END-->
+        <!-- section designe START -->
+        <section class="section-designe">
+            <div class="wrapper flex-column flex-column_horizontal-center flex-column_vertical-center">
 
-                    <div id="accordion-resizer" class="ui-widget-content">
-                        <div id="accordion">
-                            <h3 id="show-slide1">
-                                <i class="fas fa-camera-retro accordion-title-icon"></i>
-                                <span class="accordion-title">Photography</span>
-                            </h3>
-                            <div class="accordion-wrap-text">
-                                <p class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                    laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    mollit anim id est laborum.
-                                </p>
+                <div class="section-designe__subgolem section-name-subgolem">We work with</div>
+                <div class="section-designe__title section-name-title">Amazing Services</div>
+                <div class="section-designe__delimiter section-name-delimiter"></div>
+
+                <div class="img-box">
+                    <div class="img-box__img"></div>
+                </div>
+            </div>
+        </section>
+        <!-- section designe END -->
+        <!-- section what we do START -->
+        <section class="section-what-we-do">
+            <div class="wrapper">
+                <div class="section-what-we-do__title-text flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <div class="section-what-we-do__subgolem section-name-subgolem">Service</div>
+                    <div class="section-what-we-do__title section-name-title">what we do</div>
+                    <div class="section-what-we-do__delimiter section-name-delimiter"></div>
+                    <div class="section-what-we-do__text section-name-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+
+                <div class="content-box flex-row">
+                    <div class="content-box-slider-block">
+                        <div class="slider">
+                            <div class="slider-content">
+                                <div style="background-image: url(img/img-we-do1.jpg);" class="slider-img"></div>
                             </div>
-                            <h3>
-                                <i class="fas fa-pencil-ruler accordion-title-icon"></i>
-                                <span class="accordion-title">creativity</span>
-                            </h3>
-                            <div class="accordion-wrap-text">
-                                <p class="accordion-text">Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit
-                                    faucibus urna. </p>
+                            <div class="slider-content">
+                                <div style="background-image: url(img/startup-593296_640.jpg);" class="slider-img"></div>
                             </div>
-                            <h3>
-                                <i class="fas fa-bullseye accordion-title-icon"></i>
-                                <span class="accordion-title">web design</span>
-                            </h3>
-                            <div class="accordion-wrap-text">
-                                <p class="accordion-text">Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                                    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-                                <ul class="accordion-text">
-                                    <li>List item one</li>
-                                    <li>List item two</li>
-                                    <li>List item three</li>
-                                </ul>
-                                <p class="accordion-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip mollit anim id est laborum.
-                                </p>
+                            <div class="slider-content">
+                                <div style="background-image: url(img/woman-photographer-1245761_640.jpg);" class="slider-img"></div>
                             </div>
+                            <div class="slider-content">
+                                <div style="background-image: url(img/painter-931711_640.jpg);" class="slider-img"></div>
+                            </div>
+
                         </div>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
-    <!-- section what we do END -->
-    <!-- section coments START -->
-    <section class="section-coments">
-        <div class="wrapper">
-            <div class="section-coments-slider">
+                    <div class="content-box-accordion-block">
 
-                <div class="section-coments-slider__slide">
-                    <div class="slide-content flex-row flex-row_horizontal-center flex-row_vertical-center">
-                        <div class="slide-img" style="background-image: url(img/hiker-1149877_640.jpg);"></div>
-                        <div class="slide-text-wrap">
-                            <div class="slide-text-wrap__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                            <div class="slide-text-wrap__signature flex-row  flex-row_vertical-center">
-                                <span class="delimiter"></span>
-                                <span class="">Joshua Earle</span>
+                        <div id="accordion-resizer" class="ui-widget-content">
+                            <div id="accordion">
+                                <h3 id="show-slide1">
+                                    <i class="fas fa-camera-retro accordion-title-icon"></i>
+                                    <span class="accordion-title">Photography</span>
+                                </h3>
+                                <div class="accordion-wrap-text">
+                                    <p class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                        est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <h3>
+                                    <i class="fas fa-pencil-ruler accordion-title-icon"></i>
+                                    <span class="accordion-title">creativity</span>
+                                </h3>
+                                <div class="accordion-wrap-text">
+                                    <p class="accordion-text">Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                        suscipit faucibus urna. </p>
+                                </div>
+                                <h3>
+                                    <i class="fas fa-bullseye accordion-title-icon"></i>
+                                    <span class="accordion-title">web design</span>
+                                </h3>
+                                <div class="accordion-wrap-text">
+                                    <p class="accordion-text">Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna
+                                        quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                                    <ul class="accordion-text">
+                                        <li>List item one</li>
+                                        <li>List item two</li>
+                                        <li>List item three</li>
+                                    </ul>
+                                    <p class="accordion-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip mollit anim id est laborum.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="section-coments-slider__slide">
-                    <div class="slide-content flex-row flex-row_horizontal-center flex-row_vertical-center">
-                        <div class="slide-img" style="background-image: url(img/black-people-1845715_640.jpg);"></div>
-                        <div class="slide-text-wrap">
-                            <div class="slide-text-wrap__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                            <div class="slide-text-wrap__signature flex-row  flex-row_vertical-center">
-                                <span class="delimiter"></span>
-                                <span class="">Joshua Earle</span>
+            </div>
+        </section>
+        <!-- section what we do END -->
+        <!-- section coments START -->
+        <section class="section-coments">
+            <div class="wrapper">
+                <div class="section-coments-slider">
+
+                    <div class="section-coments-slider__slide">
+                        <div class="slide-content flex-row flex-row_horizontal-center flex-row_vertical-center">
+                            <div class="slide-img" style="background-image: url(img/hiker-1149877_640.jpg);"></div>
+                            <div class="slide-text-wrap">
+                                <div class="slide-text-wrap__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="slide-text-wrap__signature flex-row  flex-row_vertical-center">
+                                    <span class="delimiter"></span>
+                                    <span class="">Joshua Earle</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section-coments-slider__slide">
-                    <div class="slide-content flex-row flex-row_horizontal-center flex-row_vertical-center">
-                        <div class="slide-img" style="background-image: url(img/entrepreneur-593371_640.jpg);"></div>
-                        <div class="slide-text-wrap">
-                            <div class="slide-text-wrap__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                            <div class="slide-text-wrap__signature flex-row  flex-row_vertical-center">
-                                <span class="delimiter"></span>
-                                <span class="">Joshua Earle</span>
+                    <div class="section-coments-slider__slide">
+                        <div class="slide-content flex-row flex-row_horizontal-center flex-row_vertical-center">
+                            <div class="slide-img" style="background-image: url(img/black-people-1845715_640.jpg);"></div>
+                            <div class="slide-text-wrap">
+                                <div class="slide-text-wrap__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="slide-text-wrap__signature flex-row  flex-row_vertical-center">
+                                    <span class="delimiter"></span>
+                                    <span class="">Joshua Earle</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section-coments-slider__slide">
-                    <div class="slide-content flex-row flex-row_horizontal-center flex-row_vertical-center">
-                        <div class="slide-img" style="background-image: url(img/human-613601_640.jpg);"></div>
-                        <div class="slide-text-wrap">
-                            <div class="slide-text-wrap__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                            <div class="slide-text-wrap__signature flex-row  flex-row_vertical-center">
-                                <span class="delimiter"></span>
-                                <span class="">Joshua Earle</span>
+                    <div class="section-coments-slider__slide">
+                        <div class="slide-content flex-row flex-row_horizontal-center flex-row_vertical-center">
+                            <div class="slide-img" style="background-image: url(img/entrepreneur-593371_640.jpg);"></div>
+                            <div class="slide-text-wrap">
+                                <div class="slide-text-wrap__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="slide-text-wrap__signature flex-row  flex-row_vertical-center">
+                                    <span class="delimiter"></span>
+                                    <span class="">Joshua Earle</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="section-coments-slider__slide">
-                    <div class="slide-content flex-row flex-row_horizontal-center flex-row_vertical-center">
-                        <div class="slide-img" style="background-image: url(img/man-1868730_640.jpg);"></div>
-                        <div class="slide-text-wrap">
-                            <div class="slide-text-wrap__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                            <div class="slide-text-wrap__signature flex-row  flex-row_vertical-center">
-                                <span class="delimiter"></span>
-                                <span class="">Joshua Earle</span>
+                    <div class="section-coments-slider__slide">
+                        <div class="slide-content flex-row flex-row_horizontal-center flex-row_vertical-center">
+                            <div class="slide-img" style="background-image: url(img/human-613601_640.jpg);"></div>
+                            <div class="slide-text-wrap">
+                                <div class="slide-text-wrap__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="slide-text-wrap__signature flex-row  flex-row_vertical-center">
+                                    <span class="delimiter"></span>
+                                    <span class="">Joshua Earle</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="section-coments-slider__slide">
+                        <div class="slide-content flex-row flex-row_horizontal-center flex-row_vertical-center">
+                            <div class="slide-img" style="background-image: url(img/man-1868730_640.jpg);"></div>
+                            <div class="slide-text-wrap">
+                                <div class="slide-text-wrap__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                <div class="slide-text-wrap__signature flex-row  flex-row_vertical-center">
+                                    <span class="delimiter"></span>
+                                    <span class="">Joshua Earle</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- section coments END -->
+        <!-- section team START -->
+        <section class="section-team">
+            <div class="wrapper">
+                <div class="section-what-we-do__title-text flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <div class="section-team__subgolem section-name-subgolem">Who we aree</div>
+                    <div class="section-team__title section-name-title">Meet our team</div>
+                    <div class="section-team__delimiter section-name-delimiter"></div>
+                    <div class="section-team__text section-name-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-    <!-- section coments END -->
-    <!-- section team START -->
-    <section class="section-team">
-        <div class="wrapper">
-            <div class="section-what-we-do__title-text flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <div class="section-team__subgolem section-name-subgolem">Who we aree</div>
-                <div class="section-team__title section-name-title">Meet our team</div>
-                <div class="section-team__delimiter section-name-delimiter"></div>
-                <div class="section-team__text section-name-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            </div>
+                <div class="team-img-block flex-row flex-row_horizontal-center flex-row_vertical-center">
 
-            <div class="team-img-block flex-row flex-row_horizontal-center flex-row_vertical-center">
+                    <div class="team-box flex-column flex-column_horizontal-center flex-column_vertical-center">
+                        <div class="team-box-content">
+                            <div class="mask">
+                                <div class="social-links flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-pinterest-p"></i>
+                                    </a>
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img class="team-img" src="img/teamer1.jpg" alt="matthew">
+                        </div>
+                        <div class="team-box__name">Matthew Dix</div>
+                        <div class="team-box__specialty">Graphic Design</div>
+                    </div>
 
-                <div class="team-box flex-column flex-column_horizontal-center flex-column_vertical-center">
-                    <div class="team-box-content">
-                        <div class="mask">
-                            <div class="social-links flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-pinterest-p"></i>
-                                </a>
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-instagram"></i>
-                                </a>
+                    <div class="team-box flex-column flex-column_horizontal-center flex-column_vertical-center">
+                        <div class="team-box-content">
+                            <div class="mask">
+                                <div class="social-links flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-pinterest-p"></i>
+                                    </a>
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-instagram"></i>
+                                    </a>
+                                </div>
                             </div>
+                            <img class="team-img" src="img/teamer2.jpg" alt="matthew">
                         </div>
-                        <img class="team-img" src="img/teamer1.jpg" alt="matthew">
+                        <div class="team-box__name">Christopher Campbell</div>
+                        <div class="team-box__specialty">Branding/UX design</div>
                     </div>
-                    <div class="team-box__name">Matthew Dix</div>
-                    <div class="team-box__specialty">Graphic Design</div>
-                </div>
-
-                <div class="team-box flex-column flex-column_horizontal-center flex-column_vertical-center">
-                    <div class="team-box-content">
-                        <div class="mask">
-                            <div class="social-links flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-pinterest-p"></i>
-                                </a>
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-instagram"></i>
-                                </a>
+                    <div class="team-box flex-column flex-column_horizontal-center flex-column_vertical-center">
+                        <div class="team-box-content">
+                            <div class="mask">
+                                <div class="social-links flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-pinterest-p"></i>
+                                    </a>
+                                    <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
+                                        <i class="social-icon-box__icon fab fa-instagram"></i>
+                                    </a>
+                                </div>
                             </div>
+                            <img class="team-img" src="img/teamer3.jpg" alt="matthew">
                         </div>
-                        <img class="team-img" src="img/teamer2.jpg" alt="matthew">
-                    </div>
-                    <div class="team-box__name">Christopher Campbell</div>
-                    <div class="team-box__specialty">Branding/UX design</div>
-                </div>
-                <div class="team-box flex-column flex-column_horizontal-center flex-column_vertical-center">
-                    <div class="team-box-content">
-                        <div class="mask">
-                            <div class="social-links flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-pinterest-p"></i>
-                                </a>
-                                <a href="#" class="social-icon-box flex-row flex-row_horizontal-center flex-row_vertical-center">
-                                    <i class="social-icon-box__icon fab fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <img class="team-img" src="img/teamer3.jpg" alt="matthew">
-                    </div>
-                    <div class="team-box__name">Michael Fertig</div>
-                    <div class="team-box__specialty">Developer</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section team END -->
-    <!-- section our work START -->
-    <section class="section-our-work">
-        <div class="wrapper">
-            <div class="section-what-we-do__title-text flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <div class="section-team__subgolem section-name-subgolem">What we do</div>
-                <div class="section-team__title section-name-title">some of our work</div>
-                <div class="section-team__delimiter section-name-delimiter"></div>
-                <div class="section-team__text section-name-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            </div>
-        </div>
-        <div class="images-block flex-row">
-            <div class="images-box1 flex-row">
-                <div class="img images-box1__item images-block__img" style="background-image: url(img/img1.jpg);">
-                    <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
-                        <i class="far fa-image"></i>
-                        <div class="mask__title">creatively designed</div>
-                        <div class="mask__text">Lorem ipsum dolor sit</div>
-                    </div>
-                </div>
-                <div class="img images-box1__item images-block__img" style="background-image: url(img/img2.jpg);">
-                    <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
-                        <i class="far fa-image"></i>
-                        <div class="mask__title">creatively designed</div>
-                        <div class="mask__text">Lorem ipsum dolor sit</div>
-                    </div>
-                </div>
-                <div class="img images-box1__item images-block__img" style="background-image: url(img/img3.jpg);">
-                    <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
-                        <i class="far fa-image"></i>
-                        <div class="mask__title">creatively designed</div>
-                        <div class="mask__text">Lorem ipsum dolor sit</div>
-                    </div>
-                </div>
-                <div class="img images-box1__item images-block__img" style="background-image: url(img/img4.jpg);">
-                    <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
-                        <i class="far fa-image"></i>
-                        <div class="mask__title">creatively designed</div>
-                        <div class="mask__text">Lorem ipsum dolor sit</div>
+                        <div class="team-box__name">Michael Fertig</div>
+                        <div class="team-box__specialty">Developer</div>
                     </div>
                 </div>
             </div>
-            <div class="images-box2 flex-row">
-                <div class="images-box-wrap">
-                    <div class="img images-box2-img images-block__img" style="background-image: url(img/img5.jpg);">
+        </section>
+        <!-- section team END -->
+        <!-- section our work START -->
+        <section class="section-our-work">
+            <div class="wrapper">
+                <div class="section-what-we-do__title-text flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <div class="section-team__subgolem section-name-subgolem">What we do</div>
+                    <div class="section-team__title section-name-title">some of our work</div>
+                    <div class="section-team__delimiter section-name-delimiter"></div>
+                    <div class="section-team__text section-name-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+            </div>
+            <div class="images-block flex-row">
+                <div class="images-box1 flex-row">
+                    <div class="img images-box1__item images-block__img" style="background-image: url(img/img1.jpg);">
+                        <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
+                            <i class="far fa-image"></i>
+                            <div class="mask__title">creatively designed</div>
+                            <div class="mask__text">Lorem ipsum dolor sit</div>
+                        </div>
+                    </div>
+                    <div class="img images-box1__item images-block__img" style="background-image: url(img/img2.jpg);">
+                        <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
+                            <i class="far fa-image"></i>
+                            <div class="mask__title">creatively designed</div>
+                            <div class="mask__text">Lorem ipsum dolor sit</div>
+                        </div>
+                    </div>
+                    <div class="img images-box1__item images-block__img" style="background-image: url(img/img3.jpg);">
+                        <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
+                            <i class="far fa-image"></i>
+                            <div class="mask__title">creatively designed</div>
+                            <div class="mask__text">Lorem ipsum dolor sit</div>
+                        </div>
+                    </div>
+                    <div class="img images-box1__item images-block__img" style="background-image: url(img/img4.jpg);">
                         <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
                             <i class="far fa-image"></i>
                             <div class="mask__title">creatively designed</div>
@@ -573,331 +566,341 @@
                         </div>
                     </div>
                 </div>
-                <div class="images-box-wrap">
-                    <div class="img images-box2-img2 images-block__img" style="background-image: url(img/img6.jpg);">
-                        <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
-                            <i class="far fa-image"></i>
-                            <div class="mask__title">creatively designed</div>
-                            <div class="mask__text">Lorem ipsum dolor sit</div>
-                        </div>
-                    </div>
-                    <div class="img images-box2-img2 images-block__img" style="background-image: url(img/img7.jpg);">
-                        <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
-                            <i class="far fa-image"></i>
-                            <div class="mask__title">creatively designed</div>
-                            <div class="mask__text">Lorem ipsum dolor sit</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section our work END -->
-    <!-- section what people say START -->
-    <section class="section-people-say">
-        <div class="wrapper">
-            <div class="section-people-say__title-text flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <div class="section-people-say__subgolem section-name-subgolem">Happy Clients</div>
-                <div class="section-people-say__title section-name-title">What people say</div>
-                <div class="section-people-say__delimiter section-name-delimiter"></div>
-            </div>
-            <div class="coments-block flex-column">
-
-                <div class="coments-block-wrap flex-row flex-row_horizontal-center flex-row_vertical-center">
-                    <div class="person-coment flex-row flex-row_horizontal-center">
-                        <div class="img">
-                            <img src="img/person1.png" alt="Matthew Dix">
-                        </div>
-                        <div class="person-coment-content">
-                            <div class="name-block">
-                                <div class="name-block__name">Matthew Dix</div>
-                                <div class="name-block__specialty">Graphic Design</div>
-                                <div class="name-block__delimiter"></div>
-                            </div>
-                            <div class="coment-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                <div class="images-box2 flex-row">
+                    <div class="images-box-wrap">
+                        <div class="img images-box2-img images-block__img" style="background-image: url(img/img5.jpg);">
+                            <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
+                                <i class="far fa-image"></i>
+                                <div class="mask__title">creatively designed</div>
+                                <div class="mask__text">Lorem ipsum dolor sit</div>
                             </div>
                         </div>
                     </div>
-                    <div class="person-coment flex-row flex-row_horizontal-center">
-                        <div class="img">
-                            <img src="img/person2.png" alt="Matthew Dix">
-                        </div>
-                        <div class="person-coment-content">
-                            <div class="name-block">
-                                <div class="name-block__name">Matthew Dix</div>
-                                <div class="name-block__specialty">Graphic Design</div>
-                                <div class="name-block__delimiter"></div>
+                    <div class="images-box-wrap">
+                        <div class="img images-box2-img2 images-block__img" style="background-image: url(img/img6.jpg);">
+                            <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
+                                <i class="far fa-image"></i>
+                                <div class="mask__title">creatively designed</div>
+                                <div class="mask__text">Lorem ipsum dolor sit</div>
                             </div>
-                            <div class="coment-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        </div>
+                        <div class="img images-box2-img2 images-block__img" style="background-image: url(img/img7.jpg);">
+                            <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
+                                <i class="far fa-image"></i>
+                                <div class="mask__title">creatively designed</div>
+                                <div class="mask__text">Lorem ipsum dolor sit</div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- section our work END -->
+        <!-- section what people say START -->
+        <section class="section-people-say">
+            <div class="wrapper">
+                <div class="section-people-say__title-text flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <div class="section-people-say__subgolem section-name-subgolem">Happy Clients</div>
+                    <div class="section-people-say__title section-name-title">What people say</div>
+                    <div class="section-people-say__delimiter section-name-delimiter"></div>
+                </div>
+                <div class="coments-block flex-column">
 
-                <div class="coments-block-wrap flex-row flex-row_horizontal-center flex-row_vertical-center">
-                    <div class="person-coment flex-row flex-row_horizontal-center">
-                        <div class="img">
-                            <img src="img/person3.png" alt="Matthew Dix">
-                        </div>
-                        <div class="person-coment-content">
-                            <div class="name-block">
-                                <div class="name-block__name">Matthew Dix</div>
-                                <div class="name-block__specialty">Graphic Design</div>
-                                <div class="name-block__delimiter"></div>
+                    <div class="coments-block-wrap flex-row flex-row_horizontal-center flex-row_vertical-center">
+                        <div class="person-coment flex-row flex-row_horizontal-center">
+                            <div class="img">
+                                <img src="img/person1.png" alt="Matthew Dix">
                             </div>
-                            <div class="coment-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="person-coment flex-row flex-row_horizontal-center">
-                        <div class="img">
-                            <img src="img/person4.png" alt="Matthew Dix">
-                        </div>
-                        <div class="person-coment-content">
-                            <div class="name-block">
-                                <div class="name-block__name">Matthew Dix</div>
-                                <div class="name-block__specialty">Graphic Design</div>
-                                <div class="name-block__delimiter"></div>
-                            </div>
-                            <div class="coment-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                            <div class="person-coment-content">
+                                <div class="name-block">
+                                    <div class="name-block__name">Matthew Dix</div>
+                                    <div class="name-block__specialty">Graphic Design</div>
+                                    <div class="name-block__delimiter"></div>
+                                </div>
+                                <div class="coment-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </div>
                             </div>
                         </div>
+                        <div class="person-coment flex-row flex-row_horizontal-center">
+                            <div class="img">
+                                <img src="img/person2.png" alt="Matthew Dix">
+                            </div>
+                            <div class="person-coment-content">
+                                <div class="name-block">
+                                    <div class="name-block__name">Matthew Dix</div>
+                                    <div class="name-block__specialty">Graphic Design</div>
+                                    <div class="name-block__delimiter"></div>
+                                </div>
+                                <div class="coment-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coments-block-wrap flex-row flex-row_horizontal-center flex-row_vertical-center">
+                        <div class="person-coment flex-row flex-row_horizontal-center">
+                            <div class="img">
+                                <img src="img/person3.png" alt="Matthew Dix">
+                            </div>
+                            <div class="person-coment-content">
+                                <div class="name-block">
+                                    <div class="name-block__name">Matthew Dix</div>
+                                    <div class="name-block__specialty">Graphic Design</div>
+                                    <div class="name-block__delimiter"></div>
+                                </div>
+                                <div class="coment-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="person-coment flex-row flex-row_horizontal-center">
+                            <div class="img">
+                                <img src="img/person4.png" alt="Matthew Dix">
+                            </div>
+                            <div class="person-coment-content">
+                                <div class="name-block">
+                                    <div class="name-block__name">Matthew Dix</div>
+                                    <div class="name-block__specialty">Graphic Design</div>
+                                    <div class="name-block__delimiter"></div>
+                                </div>
+                                <div class="coment-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- section what people say END -->
+        <!-- section latest blog START -->
+        <section class="section-latest-blog">
+            <div class="wrapper">
+                <div class="section-latest-blog__title-text flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <div class="section-latest-blog__subgolem section-name-subgolem">Our stories</div>
+                    <div class="section-latest-blog__title section-name-title">Latest blog</div>
+                    <div class="section-latest-blog__delimiter section-name-delimiter"></div>
+                </div>
+                <div class="post-block-wrap flex-row">
+
+                    <div class="post-block">
+                        <div class="img img1">
+                            <div class="calendar">
+                                <div class="calendar__day">15</div>
+                                <div class="calendar__month">Jan</div>
+                            </div>
+                        </div>
+
+                        <div class="post-block__wrap-text">
+                            <div class="title">Lorem ipsum dolor sit amet</div>
+                            <div class="text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <div class="post-block-wrap-status flex-row">
+                            <div class="status">
+                                <i class="fas fa-eye status__icon"></i>
+                                <span class="status__value">545</span>
+                            </div>
+                            <div class="status">
+                                <i class="fas fa-comment-dots status__icon"></i>
+                                <span class="status__value">17</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-block">
+                        <div class="img img2">
+                            <div class="calendar">
+                                <div class="calendar__day">14</div>
+                                <div class="calendar__month">Jan</div>
+                            </div>
+                        </div>
+
+                        <div class="post-block__wrap-text">
+                            <div class="title">Lorem ipsum dolor sit amet</div>
+                            <div class="text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <div class="post-block-wrap-status flex-row">
+                            <div class="status">
+                                <i class="fas fa-eye status__icon"></i>
+                                <span class="status__value">705</span>
+                            </div>
+                            <div class="status">
+                                <i class="fas fa-comment-dots status__icon"></i>
+                                <span class="status__value">20</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-block">
+                        <div class="img img3">
+                            <div class="calendar">
+                                <div class="calendar__day">12</div>
+                                <div class="calendar__month">Jan</div>
+                            </div>
+                        </div>
+
+                        <div class="post-block__wrap-text">
+                            <div class="title">Lorem ipsum dolor sit amet</div>
+                            <div class="text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                        <div class="post-block-wrap-status flex-row">
+                            <div class="status">
+                                <i class="fas fa-eye status__icon"></i>
+                                <span class="status__value">125</span>
+                            </div>
+                            <div class="status">
+                                <i class="fas fa-comment-dots status__icon"></i>
+                                <span class="status__value">15</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </section>
-    <!-- section what people say END -->
-    <!-- section latest blog START -->
-    <section class="section-latest-blog">
-        <div class="wrapper">
-            <div class="section-latest-blog__title-text flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <div class="section-latest-blog__subgolem section-name-subgolem">Our stories</div>
-                <div class="section-latest-blog__title section-name-title">Latest blog</div>
-                <div class="section-latest-blog__delimiter section-name-delimiter"></div>
+        </section>
+        <!-- section latest blog END -->
+        <!-- section map START -->
+        <section class="section-map">
+            <div class="close-map flex-column flex-column_horizontal-center flex-column_vertical-center">
+                <span class="close-map__text">close map</span>
+                <div class="close-map__delimiter"></div>
             </div>
-            <div class="post-block-wrap flex-row">
-
-                <div class="post-block">
-                    <div class="img img1">
-                        <div class="calendar">
-                            <div class="calendar__day">15</div>
-                            <div class="calendar__month">Jan</div>
-                        </div>
-                    </div>
-
-                    <div class="post-block__wrap-text">
-                        <div class="title">Lorem ipsum dolor sit amet</div>
-                        <div class="text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    </div>
-                    <div class="post-block-wrap-status flex-row">
-                        <div class="status">
-                            <i class="fas fa-eye status__icon"></i>
-                            <span class="status__value">545</span>
-                        </div>
-                        <div class="status">
-                            <i class="fas fa-comment-dots status__icon"></i>
-                            <span class="status__value">17</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post-block">
-                    <div class="img img2">
-                        <div class="calendar">
-                            <div class="calendar__day">14</div>
-                            <div class="calendar__month">Jan</div>
-                        </div>
-                    </div>
-
-                    <div class="post-block__wrap-text">
-                        <div class="title">Lorem ipsum dolor sit amet</div>
-                        <div class="text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    </div>
-                    <div class="post-block-wrap-status flex-row">
-                        <div class="status">
-                            <i class="fas fa-eye status__icon"></i>
-                            <span class="status__value">705</span>
-                        </div>
-                        <div class="status">
-                            <i class="fas fa-comment-dots status__icon"></i>
-                            <span class="status__value">20</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post-block">
-                    <div class="img img3">
-                        <div class="calendar">
-                            <div class="calendar__day">12</div>
-                            <div class="calendar__month">Jan</div>
-                        </div>
-                    </div>
-
-                    <div class="post-block__wrap-text">
-                        <div class="title">Lorem ipsum dolor sit amet</div>
-                        <div class="text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    </div>
-                    <div class="post-block-wrap-status flex-row">
-                        <div class="status">
-                            <i class="fas fa-eye status__icon"></i>
-                            <span class="status__value">125</span>
-                        </div>
-                        <div class="status">
-                            <i class="fas fa-comment-dots status__icon"></i>
-                            <span class="status__value">15</span>
-                        </div>
-                    </div>
+            <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
+                <div class="icon mask-icon"></div>
+                <div class="mask-title flex-column flex-column_horizontal-center flex-column_vertical-center">
+                    <span class="mask-title-text">Open map</span>
+                    <div class="mask-title-delimiter"></div>
                 </div>
             </div>
+            <div id="map"> </div>
+        </section>
+        <!-- section map END -->
 
-        </div>
-    </section>
-    <!-- section latest blog END -->
-    <!-- section map START -->
-    <section class="section-map">
-        <div class="close-map flex-column flex-column_horizontal-center flex-column_vertical-center">
-            <span class="close-map__text">close map</span>
-            <div class="close-map__delimiter"></div>
-        </div>
-        <div class="mask flex-column flex-column_horizontal-center flex-column_vertical-center">
-            <div class="icon mask-icon"></div>
-            <div class="mask-title flex-column flex-column_horizontal-center flex-column_vertical-center">
-                <span class="mask-title-text">Open map</span>
-                <div class="mask-title-delimiter"></div>
-            </div>
-        </div>
-        <div id="map"> </div>
-    </section>
-    <!-- section map END -->
+        <!-- footer START -->
+        <footer class="footer">
+            <div class="wrapper flex-row flex-row_betwen footer-delimiter footer-content-block">
+                <div class="block-info">
+                    <div class="mogo-info">
+                        <div class="footer-logo">MoGo</div>
+                        <div class="mogo-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                        <div class="followers-block">
+                            <span class="followers-block__value">15k</span>
+                            <span class="followers-block__text">followers</span>
+                        </div>
+                    </div>
+                    <div class="follow-us flex-row  flex-row_vertical-center">
+                        <div class="follow-us__text">Follow Us:</div>
+                        <a href="#" class="follow-us__link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="follow-us__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="follow-us__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="follow-us__link">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="follow-us__link">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" class="follow-us__link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="follow-us__link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="#" class="follow-us__link">
+                            <i class="fab fa-tumblr"></i>
+                        </a>
+                    </div>
+                    <form action="#" class="subscribe-form">
+                        <div class="input-block">
+                            <input type="email" id="subscribe-input" placeholder="Your email" class="input-block__input input">
+                            <!-- <label for="subscribe-input" class="input-block__label labe">Your Email</label> -->
+                            <input type="button" class="subscribe-form__btn" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+                <div class="blogs-block">
+                    <div class="blogs-block__title">Blogs</div>
 
-    <!-- footer START -->
-    <footer class="footer">
-        <div class="wrapper flex-row flex-row_betwen footer-delimiter">
-            <div class="block-info">
-                <div class="mogo-info">
-                    <div class="footer-logo">MoGo</div>
-                    <div class="mogo-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                    <div class="followers-block">
-                        <span class="followers-block__value">15k</span>
-                        <span class="followers-block__text">followers</span>
-                    </div>
-                </div>
-                <div class="follow-us flex-row  flex-row_vertical-center">
-                    <div class="follow-us__text">Follow Us:</div>
-                    <a href="#" class="follow-us__link">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="follow-us__link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="follow-us__link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="follow-us__link">
-                        <i class="fab fa-pinterest-p"></i>
-                    </a>
-                    <a href="#" class="follow-us__link">
-                        <i class="fab fa-google-plus-g"></i>
-                    </a>
-                    <a href="#" class="follow-us__link">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#" class="follow-us__link">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-                    <a href="#" class="follow-us__link">
-                        <i class="fab fa-tumblr"></i>
-                    </a>
-                </div>
-                <form action="#" class="subscribe-form">
-                    <div class="input-block">
-                        <input type="email" id="subscribe-input" placeholder="Your email" class="input-block__input input">
-                        <!-- <label for="subscribe-input" class="input-block__label labe">Your Email</label> -->
-                        <input type="button" class="subscribe-form__btn" value="Subscribe">
-                    </div>
-                </form>
-            </div>
-            <div class="blogs-block">
-                <div class="blogs-block__title">Blogs</div>
-
-                <div class="blog flex-row flex-row_betwen">
-                    <div class="img-wrap">
-                        <img src="img/photos-7884rHDsW8yqbsyN.jpg" alt="" class="blog__img">
-                    </div>
-                    <div class="text-wrap">
-                        <div class="blog__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <div class="blog flex-row flex-row_betwen">
+                        <div class="img-wrap">
+                            <img src="img/photos-7884rHDsW8yqbsyN.jpg" alt="" class="blog__img">
                         </div>
-                        <div class="blog__data">
-                            Jan 9, 2016
+                        <div class="text-wrap">
+                            <div class="blog__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                            </div>
+                            <div class="blog__data">
+                                Jan 9, 2016
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog flex-row flex-row_betwen ">
+                        <div class="img-wrap">
+                            <img src="img/photos-7884lejLFH9MN8IC.jpg" alt="" class="blog__img">
+                        </div>
+                        <div class="text-wrap">
+                            <div class="blog__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                            </div>
+                            <div class="blog__data">
+                                Jan 9, 2016
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog flex-row flex-row_betwen ">
+                        <div class="img-wrap">
+                            <img src="img/photos-7884P2smgicsZFyn.jpg" alt="" class="blog__img">
+                        </div>
+                        <div class="text-wrap">
+                            <div class="blog__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                            </div>
+                            <div class="blog__data">
+                                Jan 9, 2016
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="blog flex-row flex-row_betwen ">
-                    <div class="img-wrap">
-                        <img src="img/photos-7884lejLFH9MN8IC.jpg" alt="" class="blog__img">
-                    </div>
-                    <div class="text-wrap">
-                        <div class="blog__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                <div class="instagram-block">
+                    <div class="instagram-block__title">instagram</div>
+                    <div class="insta-box">
+                        <div class="wrap-imgs flex-row">
+                            <img class="insta-box__img" src="img/insta1.jpg" alt="">
+                            <img class="insta-box__img" src="img/insta2.jpg" alt="">
+                            <img class="insta-box__img" src="img/insta3.jpg" alt="">
                         </div>
-                        <div class="blog__data">
-                            Jan 9, 2016
+                        <div class="wrap-imgs flex-row">
+                            <img class="insta-box__img" src="img/insta4.jpg" alt="">
+                            <img class="insta-box__img" src="img/insta5.jpg" alt="">
+                            <img class="insta-box__img" src="img/insta6.jpg" alt="">
                         </div>
-                    </div>
-                </div>
-                <div class="blog flex-row flex-row_betwen ">
-                    <div class="img-wrap">
-                        <img src="img/photos-7884P2smgicsZFyn.jpg" alt="" class="blog__img">
-                    </div>
-                    <div class="text-wrap">
-                        <div class="blog__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </div>
-                        <div class="blog__data">
-                            Jan 9, 2016
+                        <div class="wrap-imgs flex-row">
+                            <img class="insta-box__img" src="img/insta7.jpg" alt="">
+                            <img class="insta-box__img" src="img/insta8.jpg" alt="">
+                            <img class="insta-box__img" src="img/insta9.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="instagram-block">
-                <div class="instagram-block__title">instagram</div>
-                <div class="insta-box">
-                    <div class="wrap-imgs flex-row">
-                        <img class="insta-box__img" src="img/insta1.jpg" alt="">
-                        <img class="insta-box__img" src="img/insta2.jpg" alt="">
-                        <img class="insta-box__img" src="img/insta3.jpg" alt="">
-                    </div>
-                    <div class="wrap-imgs flex-row">
-                        <img class="insta-box__img" src="img/insta4.jpg" alt="">
-                        <img class="insta-box__img" src="img/insta5.jpg" alt="">
-                        <img class="insta-box__img" src="img/insta6.jpg" alt="">
-                    </div>
-                    <div class="wrap-imgs flex-row">
-                        <img class="insta-box__img" src="img/insta7.jpg" alt="">
-                        <img class="insta-box__img" src="img/insta8.jpg" alt="">
-                        <img class="insta-box__img" src="img/insta9.jpg" alt="">
-                    </div>
+
+            <div class="info-psd">
+                <div class="info-psd-text">
+                    <span class="info-psd-text__text">© 2016 MoGo free PSD template by</span>
+                    <a class="info-psd-text__link" href="https://freebiesbug.com/psd-freebies/mogo-free-one-page-psd-template/">Laaqiq</a>
                 </div>
             </div>
-        </div>
-
-        <div class="info-psd">
-            <div class="info-psd-text">
-                <span class="info-psd-text__text">© 2016 MoGo free PSD template by</span>
-                <a class="info-psd-text__link" href="https://freebiesbug.com/psd-freebies/mogo-free-one-page-psd-template/">Laaqiq</a>
-            </div>
-        </div>
-    </footer>
-    <!-- footer END -->
-
+        </footer>
+        <!-- footer END -->
+    </div>
     <!-- MAIN END -->
 
     <!-- scripts -->
