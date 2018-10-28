@@ -40,7 +40,18 @@ $(document).ready(function() {
     // script for section-coments slider START
     $(".section-coments-slider").slick({
         infinite: true,
-        speed: 500
+        speed: 500,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                // arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                // centerMode: true,
+                autoplay: true,
+                autoplaySpeed: 2000
+            }
+        }]
     });
 
     // script for section-what-we-do accordion START
