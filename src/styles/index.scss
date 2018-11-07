@@ -135,6 +135,7 @@ $gradient: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 1
         overflow: hidden;
         justify-content: flex-end;
         padding: 10px;
+        padding-right: 0;
     }
     .header-logo {
         &__text {
@@ -144,9 +145,25 @@ $gradient: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 1
             color: #fff;
         }
     }
+    .header-burger {
+        display: none;
+        &__item {
+            display: block;
+            width: 40px;
+            height: 4px;
+            background-color: #fff;
+            margin-bottom: 7px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .header-menu-wrap {
+        position: relative;
+    }
     .header-nav {
         position: relative;
-        top: 0;
+        top: 6px;
         padding: 5px;
         transition: all .4s;
         &__item {
@@ -156,12 +173,21 @@ $gradient: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 1
             font-weight: 400;
             margin-right: 50px;
             text-transform: uppercase;
-            padding-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid transparent;
             &:hover {
                 color: #fce38a;
                 border-bottom: 2px solid #fce38a;
-                padding-bottom: 12px;
+                padding-bottom: 8px;
             }
+        }
+        .icon-close-menu {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            display: none;
+            font-size: 30px;
+            color: #fff;
         }
     }
     .header-form-search {
@@ -169,6 +195,7 @@ $gradient: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 1
         top: 50px;
         left: 0;
         width: 92%;
+        transition: all .4s;
         &__input {
             position: absolute;
             top: 0;
@@ -196,10 +223,26 @@ $gradient: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 1
 
 body.show-search-field {
     .header {
-        .header-nav {
-            top: -70px;
-            transition: all .4s;
+        .header-menu-wrap {
+            .header-nav {
+                top: -70px;
+                transition: all .4s;
+            }
+            .header-form-search {
+                top: -32px;
+                transition: all .4s;
+            }
         }
+    }
+}
+
+body.show-menu {
+    .header-nav {
+        // display: flex;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        transition: all .6s;
     }
 }
 
@@ -226,11 +269,11 @@ body.show-search-field {
         transition: opacity .5s;
     }
     .modal-window-wrap {
-        width: 100%;
+        width: 70%;
     }
     .modal-window {
         position: relative;
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
         z-index: 55;
         box-shadow: 0px 0px 70px -12px #95e1d3;
@@ -330,7 +373,7 @@ body.show-search-field {
         .img-block {
             position: relative;
             width: 100%;
-            background-image: url(../img/summerfield-336672_1280.jpg);
+            background-image: url(../img/bagan-1137015_1280.jpg);
             .img-block-title {
                 width: 100%;
                 height: 100%;
@@ -344,19 +387,21 @@ body.show-search-field {
                     text-shadow: 0px 7px 27px black;
                 }
             }
-            .close-modal {
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                .fa-times-circle {
-                    font-size: 25px;
-                    cursor: pointer;
-                    color: #95e1d3;
-                    &:hover {
-                        color: #f38181;
-                    }
-                }
-            }
+        }
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 55;
+    .fa-times-circle {
+        font-size: 25px;
+        cursor: pointer;
+        color: #95e1d3;
+        &:hover {
+            color: #f38181;
         }
     }
 }
@@ -376,7 +421,7 @@ body.show-modal-window {
 body.tab-img-change {
     .modal-window {
         .img-block {
-            background-image: url(../img/bagan-1137015_1280.jpg);
+            background-image: url(../img/summerfield-336672_1280.jpg);
         }
     }
 }

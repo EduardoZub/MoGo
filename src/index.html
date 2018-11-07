@@ -22,18 +22,27 @@
                 <div class="header-logo">
                     <a href="#" class="header-logo__text">MoGo</a>
                 </div>
-                <div class="header-item-wrap flex-row flex-row_vertical-center">
-                    <nav class="header-nav">
-                        <a href="#" class="header-nav__item">About</a>
-                        <a href="#" class="header-nav__item">service</a>
-                        <a href="#" class="header-nav__item">work</a>
-                        <a href="#" class="header-nav__item">blog</a>
-                        <a href="#" class="header-nav__item">contact</a>
-
+                <div class="header-burger">
+                    <span class="header-burger__item"></span>
+                    <span class="header-burger__item"></span>
+                    <span class="header-burger__item"></span>
+                </div>
+                <div class="header-item-wrap flex-row flex-row_vertical-center flex-row_horizontal-center">
+                    <div class="header-menu-wrap">
+                        <nav class="header-nav flex-row flex-row_vertical-center">
+                            <div class="icon-close-menu">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                            <a href="#" class="header-nav__item">About</a>
+                            <a href="#" class="header-nav__item">service</a>
+                            <a href="#" class="header-nav__item">work</a>
+                            <a href="#" class="header-nav__item">blog</a>
+                            <a href="#" class="header-nav__item">contact</a>
+                        </nav>
                         <form class="header-form-search" action="#">
                             <input class="header-form-search__input" type="text">
                         </form>
-                    </nav>
+                    </div>
                     <i class="icon-header icon-header__account  far fa-user-circle"></i>
                     <i class="icon-header icon-header__search fas fa-search"></i>
                 </div>
@@ -51,6 +60,10 @@
                             <span class="tab tab_img-two ">Sign up</span>
                         </div>
                         <div class="tab_content">
+                            <div class="close-modal">
+                                <i class="far fa-times-circle"></i>
+
+                            </div>
                             <div class="tab_item">
                                 <form action="#" class="form form-sign-in flex-column flex-column_horizontal-center flex-column_vertical-center">
                                     <label for="email-sign-in" class="form-sign-in__labe form__labe">Email</label>
@@ -88,9 +101,7 @@
                         </div>
                     </div>
                     <div class="img-block img">
-                        <div class="close-modal">
-                            <i class="far fa-times-circle"></i>
-                        </div>
+
                         <div class="img-block-title flex-column flex-column_horizontal-center flex-column_vertical-center">
                             <div class="img-block-title__text">Welcome</div>
                             <div class="img-block-title__text">to</div>
@@ -198,7 +209,7 @@
         <!-- section about END -->
         <!-- section status START -->
         <section class="section-status">
-            <div class="wrapper flex-row flex-row_vertical-center flex-row_horizontal-center">
+            <div class="wrapper flex-row flex-row_vertical-center flex-row_horizontal-center section-status-content-wrap">
                 <div class="status-block flex-column flex-column_horizontal-center flex-column_vertical-center">
                     <div class="status-block__numb">42</div>
                     <div class="status-block__title">Web Design Projects</div>

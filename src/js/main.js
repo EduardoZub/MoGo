@@ -73,11 +73,14 @@ $(document).ready(function() {
         }
     });
 
-    // script for map START
+    // script for show map START
     $(".mask-title, .close-map").click(function() {
         $("body").toggleClass("show-map");
     });
-    // script for map END
+    // script for show menu STARt
+    $(".header-burger, .icon-close-menu").click(function() {
+        $("body").toggleClass("show-menu");
+    });
 
 });
 // script for map START
