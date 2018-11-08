@@ -440,11 +440,12 @@
                     min-width: 100%;
                     .tab_content {
                         min-height: 100%;
+                        padding: 32px;
                     }
                 }
                 .close-modal {
-                    top: 460px;
-                    right: 147px;
+                    top: 445px;
+                    right: 46%;
                     .fa-times-circle {
                         font-size: 40px;
                     }
