@@ -416,17 +416,25 @@
         }
     }
     .section-modal-window {
+        height: 100vh;
         .mask-block {
             display: none;
         }
         .modal-window-wrap {
+            width: 100%;
             height: 100vh;
             background-color: #fff;
             .modal-window {
                 box-shadow: 0 0 0 0;
+                .content-block {
+                    min-width: 100%;
+                    .tab_content {
+                        min-height: 100%;
+                    }
+                }
                 .close-modal {
                     top: 488px;
-                    right: 160px;
+                    right: 147px;
                     .fa-times-circle {
                         font-size: 40px;
                     }
