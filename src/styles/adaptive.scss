@@ -265,6 +265,13 @@
                 font-size: 30px;
                 margin-right: 0;
                 margin-bottom: 20px;
+                padding: 0;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:hover {
+                    padding: 0;
+                }
             }
             .icon-close-menu {
                 display: block;
@@ -433,7 +440,7 @@
                     }
                 }
                 .close-modal {
-                    top: 488px;
+                    top: 460px;
                     right: 147px;
                     .fa-times-circle {
                         font-size: 40px;
@@ -517,6 +524,7 @@
                 justify-content: center;
                 &__input {
                     margin-bottom: 20px;
+                    padding: 10px;
                 }
             }
         }
