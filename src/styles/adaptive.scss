@@ -197,6 +197,9 @@
         }
         .instagram-block {
             margin-top: 60px;
+            &__title {
+                text-align: center;
+            }
         }
     }
 }
@@ -517,12 +520,15 @@
             }
         }
         .subscribe-form {
+            width: 85%;
             .input-block {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 &__input {
+                    width: 100%;
                     margin-bottom: 20px;
                     padding: 10px;
                 }
