@@ -406,11 +406,31 @@
 }
 
 @media (max-width: 460px) {
+    .header {
+        .header-burger__item {
+            width: 30px;
+            margin-bottom: 5px;
+        }
+        .icon-header {
+            margin-right: 20px;
+        }
+    }
     .section-modal-window {
-        .modal-window {
-            .close-modal {
-                top: -40px;
-                right: 0;
+        .mask-block {
+            display: none;
+        }
+        .modal-window-wrap {
+            height: 100vh;
+            background-color: #fff;
+            .modal-window {
+                box-shadow: 0 0 0 0;
+                .close-modal {
+                    top: 488px;
+                    right: 160px;
+                    .fa-times-circle {
+                        font-size: 40px;
+                    }
+                }
             }
         }
     }
@@ -448,6 +468,47 @@
                         margin-right: 0;
                         margin-bottom: 10px;
                     }
+                }
+            }
+        }
+    }
+    .section-people-say {
+        .coments-block-wrap {
+            .person-coment {
+                flex-direction: column;
+                align-items: center;
+                .person-coment-content {
+                    margin-left: 0;
+                    .coment-text {
+                        text-align: center;
+                    }
+                }
+            }
+            .name-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .footer {
+        .block-info {
+            .follow-us {
+                flex-direction: column;
+                &__text {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .subscribe-form {
+            .input-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &__input {
+                    margin-bottom: 20px;
                 }
             }
         }

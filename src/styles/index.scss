@@ -396,7 +396,8 @@ body.show-menu {
     top: 15px;
     right: 15px;
     z-index: 55;
-    .fa-times-circle {
+    .fa-times-circle,
+    .fa-times {
         font-size: 25px;
         cursor: pointer;
         color: #95e1d3;
