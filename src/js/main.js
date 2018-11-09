@@ -30,13 +30,11 @@ $(document).ready(function() {
         infinite: true,
         speed: 500,
         fade: true,
-        cssEase: 'linear'
-            // autoplay: true,
-            // autoplaySpeed: 2000
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000
     });
-    // $("#show-slide1").on('click', function() {
-    //     // slideIndex++;
-    // });
+
     // script for section-coments slider START
     $(".section-coments-slider").slick({
         infinite: true,
@@ -44,10 +42,9 @@ $(document).ready(function() {
         responsive: [{
             breakpoint: 1024,
             settings: {
-                // arrows: false,
+                arrows: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                // centerMode: true,
                 autoplay: true,
                 autoplaySpeed: 2000
             }
@@ -74,44 +71,12 @@ $(document).ready(function() {
     });
 
     // script for show map START
-    $(".mask-title, .close-map").click(function() {
-        $("body").toggleClass("show-map");
-    });
+    // $(".mask-title, .close-map").click(function() {
+    //     $("body").toggleClass("show-map");
+    // });
     // script for show menu STARt
     $(".header-burger, .icon-close-menu").click(function() {
         $("body").toggleClass("show-menu");
     });
 
 });
-// script for map START
-var MyMap;
-
-function initMap() {
-    MyMap = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 56.005476, lng: -4.358288 },
-        zoom: 13,
-        // mapTypeId: google.maps.MapTypeId.SATELLITE,
-        mapTypeId: 'satellite',
-        heading: 90,
-        tilt: 45
-
-    });
-
-
-
-    var marker = new google.maps.Marker({
-        position: { lat: 56.008476, lng: -4.358299 },
-        map: MyMap,
-        icon: "img/PIN_2.png"
-    })
-
-    var InfoWindow = new google.maps.InfoWindow({
-        content: "<span>MoGo</span>"
-    })
-
-    InfoWindow.open(MyMap, marker)
-
-    marker.addListener("click", function() {
-        InfoWindow.open(MyMap, marker);
-    })
-}

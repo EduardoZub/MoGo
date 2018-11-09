@@ -401,6 +401,7 @@
         }
     }
     .section-latest-blog {
+        padding-bottom: 0;
         .post-block-wrap {
             flex-direction: column;
             .post-block {
@@ -444,9 +445,21 @@
                 }
                 .close-modal {
                     top: 445px;
-                    right: 46%;
-                    .fa-times-circle {
-                        font-size: 40px;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+                    border-radius: 205px 205px 0 0;
+                    .close-modal-icon-wrap {
+                        width: 50%;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin-top: 20px;
+                        .fa-times-circle {
+                            font-size: 40px;
+                        }
                     }
                 }
             }
